@@ -6,9 +6,9 @@ import time
 def WLC_SSH_Login(remote,user,passwd):
 
     #Log into the WLC
-    remote.send('s.sebastian')
+    remote.send(user)
     remote.send("\n")
-    remote.send('II3oer2j')
+    remote.send(passwd)
     remote.send("\n")
 
     print 'You have logged in '
