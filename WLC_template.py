@@ -12,9 +12,9 @@ class WLC_SSH(object):
         self.session=self.temp.invoke_shell()
         
         #Log into the WLC
-        self.session.send('s.sebastian')
+        self.session.send(user)
         self.session.send("\n")
-        self.session.send('II3oer2j')
+        self.session.send(passwd)
         self.session.send("\n")
         print 'You have logged in '
     
